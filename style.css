@@ -2,7 +2,12 @@ body {
   background-color: #ddd;
   color: #333;
   font-size: 100.01%
-  margin: 4em 4em;
+  margin: 0;
+  padding: 0;
+}
+
+#page {
+  margin: 4em;
 }
 
 h1 {
