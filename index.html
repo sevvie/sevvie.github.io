@@ -1,17 +1,65 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8" />
+<html lang="en">
+  <head>
+    <title>Still Rebuilding it All</title>
+    <link rel="stylesheet" href="docco.css">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div id="page">
+      <header>
+        <h1>Still Rebuilding it All</h1><span>By Jennie Rose Evers</span>
+      </header>
+      <article><h2>The madness to my method</h2>
+<p>I spent a late night hacking together some code, something utterly minimal and
+more than just a little ugly, to get myself back on the road to programming. I
+can&#39;t say I&#39;m proud of what I&#39;ve developed, but I can assuredly say that it
+worked for creating this temporary html page.</p>
+<p>The project I&#39;m attempting is a static blog generator, of sorts, but right now
+it&#39;s more of a simple HTML page generator that doesn&#39;t bother me in the way
+parsing <a href="http://daringfireball.net/projects/markdown/syntax">Markdown</a>, raw,
+does. It&#39;s just some procedural <a href="http://livescript.net">LiveScript</a>, making use
+of <a href="https://npmjs.org/package/js-yaml">JS-YAML</a>,
+<a href="https://npmjs.org/package/marked">Marked</a>, and <a href="http://jade-lang.com/">Jade</a>
+for the parsing and generating of pages.</p>
+<p>While the code itself will evolve over time, I felt like publicly embarrassing
+myself by showing the code I&#39;m working with, here, in a blog post-like way, is
+a good way to start the iterative process. So, without further regrets, the
+code that generated this HTML page. (This page&#39;s source: <a href="index.txt">index.txt</a>)</p>
+<pre><code>global &lt;<span class="xml"><span class="tag">&lt;<span class="title">&lt;</span> <span class="attribute">require</span> \<span class="attribute">prelude-ls</span>
+<span class="attribute">fs</span> = <span class="attribute">require</span> \<span class="attribute">fs</span>
+<span class="attribute">yaml</span> = <span class="attribute">require</span> \<span class="attribute">js-yaml</span>
+<span class="attribute">marked</span> = <span class="attribute">require</span> \<span class="attribute">marked</span>
+<span class="attribute">jade</span> = <span class="attribute">require</span> \<span class="attribute">jade</span>
 
-  <title>Srsly, again?</title>
+<span class="attribute">args</span> = <span class="attribute">drop</span> <span class="attribute">2</span> <span class="attribute">process.argv</span>
 
-  <link rel="stylesheet" href="style.css" media="screen" />
-</head>
-<body>
-  <div id="page">
-    <h1>Yup, I screwed the proverbial pooch again.</h1>
+<span class="attribute">rawdoc</span> = <span class="attribute">fs.readFileSync</span> <span class="attribute">args.0</span> <span class="attribute">.to-string</span>! <span class="attribute">.split</span> "<span class="attribute">---</span>\<span class="attribute">n</span>"
+<span class="attribute">rawdoc</span> = <span class="attribute">drop</span> <span class="attribute">1</span> <span class="attribute">rawdoc</span>
 
-    <p>But I'm going to incrementally improve this page, as I incrementally improve my remarkably poorly-handled life.</p>
-  </div>
-</body>
+<span class="attribute">header</span> = <span class="attribute">yaml.load</span> <span class="attribute">rawdoc.0</span>
+<span class="attribute">content</span> = <span class="attribute">marked</span> <span class="attribute">rawdoc.1</span>
+
+<span class="attribute">jadetmpl</span> = '''<span class="attribute">doctype</span> <span class="attribute">5</span>
+<span class="attribute">html</span>(<span class="attribute">lang</span>=<span class="value">"en"</span>)
+  <span class="attribute">head</span>
+    <span class="attribute">title</span>= <span class="attribute">header.title</span>
+    <span class="attribute">link</span>(<span class="attribute">rel</span>=<span class="value">"stylesheet"</span>, <span class="attribute">href</span>=<span class="value">"style.css"</span>)
+  <span class="attribute">body</span>
+    <span class="attribute">header</span>
+      <span class="attribute">h1</span>= <span class="attribute">header.title</span>
+      <span class="attribute">span</span> <span class="attribute">By</span> #{<span class="attribute">header.author</span>}
+    <span class="attribute">article</span>!= <span class="attribute">content</span>
+'''
+
+<span class="attribute">jadec</span> = <span class="attribute">jade.compile</span> <span class="attribute">jadetmpl</span>, {<span class="attribute">pretty:</span> <span class="attribute">true</span>}
+<span class="attribute">output</span> = <span class="attribute">jadec</span> {<span class="attribute">header:</span> <span class="attribute">header</span>, <span class="attribute">content:</span> <span class="attribute">content</span>}
+
+<span class="attribute">fs.writeFileSync</span> <span class="attribute">args.0.replace</span>("<span class="attribute">.txt</span>", "<span class="attribute">.html</span>"), <span class="attribute">output</span></span></code></pre>
+<p>I lost a lot of hours this evening, writing this, and it was so worth it; even
+if I&#39;m just gonna hate it tomorrow. A little bit at a time, and steady as she
+goes.</p>
+</article>
+    </div>
+  </body>
 </html>
