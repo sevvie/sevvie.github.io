@@ -25,37 +25,10 @@ for the parsing and generating of pages.</p>
 <p>While the code itself will evolve over time, I felt like publicly embarrassing
 myself by showing the code I&#39;m working with, here, in a blog post-like way, is
 a good way to start the iterative process. So, without further regrets, the
-code that generated this HTML page. (This page&#39;s source: <a href="index.txt">index.txt</a>)</p>
-<pre><code>global &lt;<span class="xml"><span class="tag">&lt;<span class="title">&lt;</span> <span class="attribute">require</span> \<span class="attribute">prelude-ls</span>
-<span class="attribute">fs</span> = <span class="attribute">require</span> \<span class="attribute">fs</span>
-<span class="attribute">yaml</span> = <span class="attribute">require</span> \<span class="attribute">js-yaml</span>
-<span class="attribute">marked</span> = <span class="attribute">require</span> \<span class="attribute">marked</span>
-<span class="attribute">jade</span> = <span class="attribute">require</span> \<span class="attribute">jade</span>
+code that generated this HTML page. (This page&#39;s source:
+<a href="still-rebuilding.txt">still-rebuilding.txt</a>)</p>
+<script src="https://gist.github.com/sevvie/6103301.js"></script>
 
-<span class="attribute">args</span> = <span class="attribute">drop</span> <span class="attribute">2</span> <span class="attribute">process.argv</span>
-
-<span class="attribute">rawdoc</span> = <span class="attribute">fs.readFileSync</span> <span class="attribute">args.0</span> <span class="attribute">.to-string</span>! <span class="attribute">.split</span> "<span class="attribute">---</span>\<span class="attribute">n</span>"
-<span class="attribute">rawdoc</span> = <span class="attribute">drop</span> <span class="attribute">1</span> <span class="attribute">rawdoc</span>
-
-<span class="attribute">header</span> = <span class="attribute">yaml.load</span> <span class="attribute">rawdoc.0</span>
-<span class="attribute">content</span> = <span class="attribute">marked</span> <span class="attribute">rawdoc.1</span>
-
-<span class="attribute">jadetmpl</span> = '''<span class="attribute">doctype</span> <span class="attribute">5</span>
-<span class="attribute">html</span>(<span class="attribute">lang</span>=<span class="value">"en"</span>)
-  <span class="attribute">head</span>
-    <span class="attribute">title</span>= <span class="attribute">header.title</span>
-    <span class="attribute">link</span>(<span class="attribute">rel</span>=<span class="value">"stylesheet"</span>, <span class="attribute">href</span>=<span class="value">"style.css"</span>)
-  <span class="attribute">body</span>
-    <span class="attribute">header</span>
-      <span class="attribute">h1</span>= <span class="attribute">header.title</span>
-      <span class="attribute">span</span> <span class="attribute">By</span> #{<span class="attribute">header.author</span>}
-    <span class="attribute">article</span>!= <span class="attribute">content</span>
-'''
-
-<span class="attribute">jadec</span> = <span class="attribute">jade.compile</span> <span class="attribute">jadetmpl</span>, {<span class="attribute">pretty:</span> <span class="attribute">true</span>}
-<span class="attribute">output</span> = <span class="attribute">jadec</span> {<span class="attribute">header:</span> <span class="attribute">header</span>, <span class="attribute">content:</span> <span class="attribute">content</span>}
-
-<span class="attribute">fs.writeFileSync</span> <span class="attribute">args.0.replace</span>("<span class="attribute">.txt</span>", "<span class="attribute">.html</span>"), <span class="attribute">output</span></span></code></pre>
 <p>I lost a lot of hours this evening, writing this, and it was so worth it; even
 if I&#39;m just gonna hate it tomorrow. A little bit at a time, and steady as she
 goes.</p>
