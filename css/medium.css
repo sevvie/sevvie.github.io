@@ -1,0 +1,40 @@
+.wireframe div#main,
+.wireframe #navigation {
+  width: 95%;
+}
+
+.wireframe #navigation {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.wireframe #masthead hgroup {
+  margin-left: 2.5%;
+}
+
+.wireframe #media-hero img {
+  border-left: 2px solid #d09faf;
+  border-right: 2px solid #d09faf;
+}
+
+.wireframe #authorship,
+.wireframe #table-of-contents {
+}
+
+#navigation aside {
+}
+
+#navigation #site-map {
+  float: left;
+  width: 48%;
+  margin-left: 4em;
+  margin-right: 0;
+  padding: 0;
+}
+
+#navigation #social-networks {
+  float: right;
+  width: 40%;
+  margin: 0;
+  padding: 0;
+}

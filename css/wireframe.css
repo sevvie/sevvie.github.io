@@ -1,0 +1,198 @@
+@font-face {
+  font-family: "Bitter";
+  src: url("./fonts/Bitter-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Bitter";
+  font-weight: 700;
+  src: url("./fonts/Bitter-Bold.ttf");
+}
+
+@font-face {
+  font-family: "Raleway";
+  src: url("./fonts/Raleway-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Raleway";
+  font-weight: 700;
+  src: url("./fonts/Raleway-Bold.ttf");
+}
+
+body {
+  background-color: whitesmoke;
+  font-family: "Raleway", sans-serif;
+  font-size: 100.01%;
+}
+
+.cf:before,
+.cf:after { 
+  content:" ";
+  display:table; 
+  height: 0; 
+  font-size:0; 
+  line-height:0; 
+  visibility:hidden; 
+} 
+
+.cf:after { 
+  clear:both; 
+} 
+
+.cf { 
+  *zoom:1; 
+}
+
+
+.wireframe {
+  margin: 0;
+  padding: 0;
+}
+
+.wireframe header,
+.wireframe section,
+.wireframe nav,
+.wireframe footer {
+  color: silver;
+}
+
+.wireframe h1 {
+  font-family: "Bitter";
+  font-weight: 400;
+}
+
+.wireframe #masthead {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  border: 0;
+  border-bottom: 2px solid #c0607f;
+  z-index: 130;
+  background: #666;
+  color: whitesmoke;
+  opacity: 0.9;
+}
+
+.wireframe #masthead h1 {
+  display: inline-block;
+  margin: 0.25em 0em;
+  color: #f090af;
+}
+
+.wireframe #main {
+  margin: 3.5em auto 0;
+  background-image: url('../images/background.png');
+  background-position: top left;
+  background-repeat: repeat-y;
+}
+
+.wireframe #media-hero {
+  margin: 0;
+  padding-top: 0.5em;
+  border-top: 0;
+  border-bottom: 0;
+}
+
+.wireframe #media-hero img {
+  max-width: 100%;
+  border-bottom: 2px solid #d09faf;
+  border-top: 2px solid #d09faf;
+}
+
+.wireframe #content-headline {
+  margin: 0.25em 0 0;
+  padding-left: 4em;
+  color: #333;
+  background-image: url('../images/header.png');
+  background-repeat: no-repeat;
+  background-position: 0 4px;
+}
+
+.wireframe #content-headline h1 {
+  border-bottom: 1px dotted #333;
+}
+
+.wireframe #content-body {
+  font-weight: 100;
+  color: #555;
+}
+
+.wireframe #content-body > div {
+  margin-left: 4em;
+  margin-right: 1em;
+}
+
+.wireframe #content-body p {
+}
+
+.wireframe #authorship,
+.wireframe #table-of-contents {
+  font-size: 0.75em;
+  margin-bottom: 0.5em;
+}
+
+.wireframe #table-of-contents {
+  display: none;
+}
+
+.wireframe #authorship {
+  text-align: right;
+  margin-right: 1em;
+  color: #666;
+}
+
+.wireframe #authorship .mobile-label {
+  display: inline;
+}
+
+.wireframe #authorship img {
+  display: none;
+}
+
+.wireframe #authorship .author {
+  font-size: 1.25em;
+  font-style: italic;
+}
+
+.wireframe #authorship .published {
+  font-size: 1.1em;
+  font-style: italic;
+}
+
+.wireframe #navigation {
+  clear: both;
+  background-image: url('../images/background.png');
+  background-position: top left;
+  background-repeat: repeat-y;
+}
+
+.wireframe #navigation aside {
+  margin-left: 4em;
+  margin-right: 1em;
+}
+
+aside ul li {
+  border-bottom: 1px dotted #666;
+  list-style: none;
+}
+
+aside ul li a {
+  text-decoration: none;
+}
+
+.wireframe #footer {
+  font-size: 0.875em;
+  color: #666;
+  background-color: #ccc;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  border-top: 1px solid #c0607f;
+}
+
+.wireframe #footer p {
+  margin-right: 2em;
+  font-style: italic;
+  text-align: right;
+}
