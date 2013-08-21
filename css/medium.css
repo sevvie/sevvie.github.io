@@ -1,24 +1,24 @@
-.wireframe div#main,
-.wireframe #navigation {
+div#main,
+#navigation {
   width: 95%;
 }
 
-.wireframe #navigation {
+#navigation {
   margin-left: auto;
   margin-right: auto;
 }
 
-.wireframe #masthead hgroup {
+#masthead hgroup {
   margin-left: 2.5%;
 }
 
-.wireframe #media-hero img {
+#media-hero img {
   border-left: 2px solid #d09faf;
   border-right: 2px solid #d09faf;
 }
 
-.wireframe #authorship,
-.wireframe #table-of-contents {
+#authorship,
+#table-of-contents {
 }
 
 #navigation aside {

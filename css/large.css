@@ -1,24 +1,28 @@
-.wireframe div#main,
-.wireframe #navigation {
+div#main,
+#navigation {
   width: 960px;
 }
 
-.wireframe #masthead hgroup {
+#masthead hgroup {
   width: 960px;
   margin-left: auto;
   margin-right: auto;
 }
 
-.wireframe #content-headline,
-.wireframe #navigation {
+#content-headline,
+#navigation {
   clear: both;
 }
 
-.wireframe #content-headline {
+#content-headline {
   margin-bottom: 0.5em;
 }
 
-.wireframe #content-body {
+#content-body {
+  width: 100%;
+}
+
+.post #content-body {
   margin-left: 0;
   margin-right: 0;
   margin-top: 0;
@@ -26,8 +30,13 @@
   width: 68%;
 }
 
-.wireframe #authorship,
-.wireframe #table-of-contents {
+#authorship,
+#table-of-contents {
+  display: none;
+}
+
+.post #authorship {
+  display: block;
   margin-left: 0;
   margin-right: 0;
   margin-top: 0;
@@ -35,15 +44,15 @@
   width: 29%;
 }
 
-.wireframe #authorship {
+#authorship {
   text-align: left;
 }
 
-.wireframe #authorship .mobile-label {
+#authorship .mobile-label {
   display: none;
 }
 
-.wireframe #authorship img {
+.post #authorship img {
   display: block;
   float: right;
   border: 2px solid #d09faf;

@@ -45,24 +45,24 @@ body {
 }
 
 
-.wireframe {
+body {
   margin: 0;
   padding: 0;
 }
 
-.wireframe header,
-.wireframe section,
-.wireframe nav,
-.wireframe footer {
+header,
+section,
+nav,
+footer {
   color: silver;
 }
 
-.wireframe h1 {
+h1, h2, h3, h4 {
   font-family: "Bitter";
   font-weight: 400;
 }
 
-.wireframe #masthead {
+#masthead {
   position: fixed;
   left: 0;
   right: 0;
@@ -75,33 +75,37 @@ body {
   opacity: 0.9;
 }
 
-.wireframe #masthead h1 {
+#masthead h1 {
   display: inline-block;
   margin: 0.25em 0em;
-  color: #f090af;
 }
 
-.wireframe #main {
+#masthead h1 a {
+  color: #f090af;
+  text-decoration: none;
+}
+
+#main {
   margin: 3.5em auto 0;
   background-image: url('../images/background.png');
   background-position: top left;
   background-repeat: repeat-y;
 }
 
-.wireframe #media-hero {
+#media-hero {
   margin: 0;
   padding-top: 0.5em;
   border-top: 0;
   border-bottom: 0;
 }
 
-.wireframe #media-hero img {
+#media-hero img {
   max-width: 100%;
   border-bottom: 2px solid #d09faf;
   border-top: 2px solid #d09faf;
 }
 
-.wireframe #content-headline {
+#content-headline {
   margin: 0.25em 0 0;
   padding-left: 4em;
   color: #333;
@@ -110,65 +114,71 @@ body {
   background-position: 0 4px;
 }
 
-.wireframe #content-headline h1 {
+#content-headline h1 {
   border-bottom: 1px dotted #333;
 }
 
-.wireframe #content-body {
+#content-body {
   font-weight: 100;
   color: #555;
 }
 
-.wireframe #content-body > div {
+#content-body > div {
   margin-left: 4em;
   margin-right: 1em;
 }
 
-.wireframe #content-body p {
+#content-body p {
 }
 
-.wireframe #authorship,
-.wireframe #table-of-contents {
+#read-more {
+  font-size: 1.1em;
+  margin: 0.5em 0.25em;
+  text-align: right;
+}
+
+#authorship,
+#table-of-contents {
   font-size: 0.75em;
   margin-bottom: 0.5em;
 }
 
-.wireframe #table-of-contents {
+#table-of-contents {
   display: none;
 }
 
-.wireframe #authorship {
+#authorship {
   text-align: right;
   margin-right: 1em;
   color: #666;
 }
 
-.wireframe #authorship .mobile-label {
+#authorship .mobile-label {
   display: inline;
 }
 
-.wireframe #authorship img {
+#authorship img {
   display: none;
 }
 
-.wireframe #authorship .author {
+#authorship .author {
   font-size: 1.25em;
   font-style: italic;
 }
 
-.wireframe #authorship .published {
+#authorship .published {
   font-size: 1.1em;
   font-style: italic;
 }
 
-.wireframe #navigation {
+#navigation {
   clear: both;
   background-image: url('../images/background.png');
   background-position: top left;
   background-repeat: repeat-y;
 }
 
-.wireframe #navigation aside {
+#navigation aside {
   margin-left: 4em;
   margin-right: 1em;
 }
@@ -182,7 +192,7 @@ aside ul li a {
   text-decoration: none;
 }
 
-.wireframe #footer {
+#footer {
   font-size: 0.875em;
   color: #666;
   background-color: #ccc;
@@ -191,7 +201,7 @@ aside ul li a {
   border-top: 1px solid #c0607f;
 }
 
-.wireframe #footer p {
+#footer p {
   margin-right: 2em;
   font-style: italic;
   text-align: right;
