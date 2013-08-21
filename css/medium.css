@@ -19,6 +19,7 @@ div#main,
 
 #authorship,
 #table-of-contents {
+  display: none;
 }
 
 #navigation aside {
