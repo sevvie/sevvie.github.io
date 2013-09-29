@@ -13,3 +13,11 @@ h5,
 #site-name {
   font-family: 'Josefin Sans', sans-serif;
 }
+
+## Fixes, for hardcoded fonts
+#pixture-reloaded,
+div.date-calendar-day,
+.ui-datepicker-div, .ui-datepicker-inline, #ui-datepicker-div,
+.advanced-help-topic span.code {
+  font-family: 'Lato', sans-serif;
+}
