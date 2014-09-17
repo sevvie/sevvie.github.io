@@ -1,8 +1,15 @@
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,400italic|Roboto+Slab:400,700);
+
 html {
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
 body {
 }
+h1, h2 {
+  font-family: 'Roboto Slab', serif;
+}
+
 .navbar {
   border-bottom: 2px solid #111;
 }
@@ -57,7 +64,7 @@ body {
 .site-title {
   color: white;
   text-align: center;
-  text-shadow: 1px 1px 2px #333;
+  text-shadow: -1px 1px 2px #222;
 }
 
 .site-title h1 {
@@ -97,4 +104,51 @@ body {
   line-height: 1.5em;
   padding-left: 1em;
   padding-right: 1em;
+}
+
+.recent-post h1 {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.recent-post p {
+  margin-left: 2em;
+  margin-right: 1em;
+}
+
+.site-map {
+  background-color: #111;
+  color: #e7e7e7;
+  padding-bottom: 18px;
+}
+
+.site-map h1 {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.social-media-map {
+  text-align: right;
+}
+
+.site-map ul {
+  display: inline-block;
+  width: 50%;
+  margin: auto;
+}
+
+.site-map li > a {
+  border-bottom: 1px solid #555;
+}
+
+.footer {
+  text-align: right;
+  text-indent: 30px;
+  font-size: 0.875em;
+  font-style: italic;
+  line-height: 3em;
+  background-color: #222;
+  color: #c7c7c7;
 }
