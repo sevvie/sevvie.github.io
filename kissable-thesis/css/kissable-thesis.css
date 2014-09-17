@@ -3,13 +3,25 @@ html {
 
 body {
 }
-
 .navbar {
-  border-bottom: 2px solid black;
+  min-height: 28px;
+  height: 32px;
 }
-
-.navbar-nav li {
-  height: 2em;
+.navbar-brand,
+.navbar-nav>li>a {
+  line-height: 26px;
+  padding: 1px 5px;
+}
+/* Toggle button size */
+.navbar-toggle {
+  margin: 4px;
+  padding: 4px;
+}
+.navbar-toggle .icon-bar {
+  width: 18px;
+}
+.navbar-toggle .icon-bar+.icon-bar {
+  margin-top: 3px;
 }
 
 .branding {
