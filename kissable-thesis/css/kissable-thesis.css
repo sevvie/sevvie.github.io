@@ -3,12 +3,13 @@ html {
 
 body {
 }
-
+.navbar > .container-fluid {
+  border-bottom: 2px solid #111;
+}
 @media( min-width: 992px ) {
   .navbar {
     min-height: 28px;
     height: 36px;
-    border-bottom: 2px solid #111;
   }
   .navbar-brand,
   .navbar-nav>li>a {
