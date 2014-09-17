@@ -106,6 +106,10 @@ h1, h2 {
   padding-right: 1em;
 }
 
+.recent-posts:after {
+  margin-bottom: 36px;
+}
+
 .recent-post h1 {
   font-size: 2em;
   font-weight: bold;
