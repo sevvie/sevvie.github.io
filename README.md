@@ -10,6 +10,6 @@ as well.
 Here's the bad news: if you're seeing this, you're gonna witness another terrifying lame
 reboot of what I do every year, if not twice a year; trashing the whole site and starting
 over. I have a secret weapon -- one that should encourage creating and committing to these
-habits. Before the inevitable `-f push` comes, though; know that one thing I'm committed to
+habits. Before the inevitable `push -f` comes, though; know that one thing I'm committed to
 is recovering old blog posts from anywhere and everywhere (hello, Wayback Machine). But
 first, I gotta get the blog show-worthy and compiling right.
