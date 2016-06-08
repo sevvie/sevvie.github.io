@@ -11,7 +11,7 @@
     "test:once": "karma start .karma.js --single-run",
     "test:e2e": "protractor .protractor.js",
     "karma": "karma start .karma.js",
-    "test": "npm run test:once && npm run test:e2e",
+    "test": "npm run test:once",
     "build": "gulp build",
     "watch": "gulp watch",
     "clean": "gulp clean"
