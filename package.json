@@ -5,6 +5,11 @@
   "author": "Jennie 'sevvie' Rose <sevvie.rose@gmail.com>",
   "homepage": "https://sevvie.github.io/",
   "license": "GPL-3.0",
+  "scripts": {
+    "test": "npm run karma",
+    "test:once": "karma start --single-run",
+    "karma": "karma start"
+  },
 
   "repository": {
     "type": "git",
