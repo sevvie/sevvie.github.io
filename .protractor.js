@@ -10,6 +10,10 @@ exports.config = {
   specs: [
     'test/**/*.e2e.js'
   ],
+  onPrepare: function() {
+    var SpecRe = require('jasmine-spec-reporter');
+    jasmine.getEnv().addReporter(new SpecRe({displayStacktrace: true}));
+  },
   useAllAngular2AppRoots: true
 };
 
