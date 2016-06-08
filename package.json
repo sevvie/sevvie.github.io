@@ -8,8 +8,12 @@
   "scripts": {
     "test:cont": "npm run karma",
     "test:once": "karma start --single-run",
+    "test:e2e": "npm run build && protractor test/protractor.conf.js",
+    "karma": "karma start",
     "test": "npm run test:once",
-    "karma": "karma start"
+    "build": "gulp build",
+    "watch": "gulp watch",
+    "clean": "gulp clean"
   },
 
   "repository": {
@@ -40,6 +44,7 @@
     "karma-source-map-support": "^1.1.0",
     "object-assign": "^4.1.0",
     "phantomjs-prebuilt": "^2.1.7",
+    "protractor": "^3.3.0",
     "vinyl-buffer": "^1.0.0",
     "vinyl-source-stream": "^1.1.0",
     "watchify": "^3.7.0"
