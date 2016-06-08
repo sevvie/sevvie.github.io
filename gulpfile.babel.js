@@ -36,6 +36,11 @@ gulp.task('clean', () => {
   del('bundle.js'); 
   del('bundle.js.map');
 });
+
+gulp.task('veryclean', ['clean'], () => {
+  del('node_modules');
+});
+
 gulp.task('default', ['copy', 'watch']);
 
 function bundle(ifier) {
