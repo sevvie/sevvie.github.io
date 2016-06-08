@@ -6,7 +6,7 @@
   "homepage": "https://sevvie.github.io/",
   "license": "GPL-3.0",
   "scripts": {
-    "postinstall": "webdriver-manager update",
+    "install-chromedriver": "webdriver-manager update",
     "test:cont": "npm run karma",
     "test:once": "karma start --single-run",
     "test:e2e": "protractor .protractor.js",

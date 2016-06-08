@@ -5,10 +5,10 @@ var httpServer = require('http-server');
 startHttpServer();
 
 exports.config = {
-  baseUrl: 'http://localhost:8007',
+  baseUrl: 'http://localhost:8007/',
   seleniumServerJar: findSelenium(),
   specs: [
-    '**/*.e2e.js'
+    'test/**/*.e2e.js'
   ],
   useAllAngular2AppRoots: true
 };
