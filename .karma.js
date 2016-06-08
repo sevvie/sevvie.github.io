@@ -4,7 +4,9 @@ module.exports = function(c) {
       'karma-browserify',
       'karma-source-map-support',
       'karma-jasmine',
-      'karma-phantomjs-launcher'],
+      'karma-phantomjs-launcher',
+      'karma-spec-reporter'
+    ],
     basePath: '',
     frameworks: ['browserify', 'source-map-support', 'jasmine'],
     files: [
@@ -20,7 +22,7 @@ module.exports = function(c) {
       debug: true,
       transform: ['babelify']
     },
-    reporters: ['progress'],
+    reporters: ['spec'],
     port: 9876,
     colors: true,
     logLevel: c.LOG_INFO,
