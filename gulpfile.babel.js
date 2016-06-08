@@ -25,7 +25,7 @@ gulp.task('build', ['copy'], () => {
 gulp.task('watch', () => {
   const b = browserify('src/index.js', assign({ debug: true }, watchify.args))
             .transform(babelify);
-  const w = watchify(b);
+  const w = watchify(b)
             .on('update', () => bundle(w))
             .on('log', gutil.log);
   return bundle(w);
