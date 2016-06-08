@@ -4,8 +4,14 @@ import {async, beforeEach, beforeEachProviders, describe, expect, inject, it}
   from '@angular/core/testing';
 import {TestComponentBuilder} from '@angular/compiler/testing';
 
-describe('Sevspy', () => {
-  it('passes for now', () => {
-    expect(1).toBe(1);
-  });
+import {Hello, Goodbye} from '../src/application';
+
+describe('Hello', () => {
+  it('renders greeting', async(inject([TestComponentBuilder], (tcb) => {
+    tcb.createAsync(Hello)
+       .then((fixture) => {
+         fixture.detectChanges();
+         expect(fixture.debugElement.nativeElement).toHaveText('Hello and welcome.');
+       });
+  })));
 });
