@@ -9,7 +9,7 @@
     "postinstall": "webdriver-manager update",
     "test:cont": "npm run karma",
     "test:once": "karma start --single-run",
-    "test:e2e": "npm run build && protractor test/protractor.conf.js",
+    "test:e2e": "protractor test/protractor.conf.js",
     "karma": "karma start",
     "test": "npm run test:once",
     "build": "gulp build",

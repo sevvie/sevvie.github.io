@@ -8,7 +8,7 @@ exports.config = {
   baseUrl: 'http://localhost:8007',
   seleniumServerJar: findSelenium(),
   specs: [
-    'test/**/*.e2e.js'
+    '**/*.e2e.js'
   ],
   useAllAngular2AppRoots: true
 };
@@ -32,5 +32,5 @@ function findSelenium() {
     process.exit(1);
   }
 
-  return path.resolve(dir, jar);
+  return path.resolve(d, jar);
 }
