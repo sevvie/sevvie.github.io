@@ -13,7 +13,7 @@ import del from 'del';
 
 gulp.task('copy', () => {
   return gulp.src( ['src/index.html'] )
-             .pipe( gulp.dest('public') );
+             .pipe( gulp.dest('.') );
 });
 
 gulp.task('build', ['copy'], () => {
@@ -31,7 +31,11 @@ gulp.task('watch', () => {
   return bundle(w);
 });
 
-gulp.task('clean', () => del('public'));
+gulp.task('clean', () => {
+  del('index.html');
+  del('bundle.js'); 
+  del('bundle.js.map');
+});
 gulp.task('default', ['copy', 'watch']);
 
 function bundle(ifier) {
@@ -43,5 +47,5 @@ function bundle(ifier) {
               .pipe(buffer())
               .pipe(sourcemaps.init({ loadMaps: true }))
               .pipe(sourcemaps.write('./'))
-              .pipe(gulp.dest('public'));
+              .pipe(gulp.dest('.'));
 }
