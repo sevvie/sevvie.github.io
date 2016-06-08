@@ -1,5 +1,10 @@
 module.exports = function(c) {
   c.set({
+    plugins: [
+      'karma-browserify',
+      'karma-source-map-support',
+      'karma-jasmine',
+      'karma-phantomjs-launcher'],
     basePath: '',
     frameworks: ['browserify', 'source-map-support', 'jasmine'],
     files: [
