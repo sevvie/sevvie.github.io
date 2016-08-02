@@ -1,16 +1,18 @@
 # Site navigation links
+- title: Index
+  url: /
 
 - title: About
   url: /about/
+
+- title: Scripts
+  url: /scripts/
 
 - title: Articles
   url: /articles/
 
 - title: Changelog
   url: /logs/
-
-- title: Scripts
-  url: /scripts/
 
 - title: Search
   url: /search/
