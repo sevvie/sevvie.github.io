@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: post
 title: "Everything's Working (for) Now"
 excerpt: "Okay, I'm done making little changes and more little changes for the day. I will admit to having a... eugh... blog."
 categories: logs

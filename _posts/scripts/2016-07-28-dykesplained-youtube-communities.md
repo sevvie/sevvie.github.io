@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: page
 title: "#Dykesplained: 'YouTube Communities'"
 description: "..."
 categories: scripts

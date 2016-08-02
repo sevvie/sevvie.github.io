@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: page
 title: Smokin' with Sev - Good Lady and the Tramp
 excerpt: "A somber eulogy for the greatest homeless man I ever knew."
 categories: scripts
