@@ -36,8 +36,8 @@ exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.
 
 # Site owner
 owner:
-  name: Jennifer \'Sevvie\' Rose
-  avatar: bio-photo.jpg
+  name: Jennifer "sevvie" Rose
+  avatar: bio-photo-sevvie.jpg
   email: sevvie.rose@gmail.com
   disqus-shortname:
   twitter: sevvierose
