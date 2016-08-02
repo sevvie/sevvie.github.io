@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: post
 title: Smokin' with Sev: "Good Lady and the Tramp"
 excerpt: "A somber eulogy for the greatest homeless man I ever knew."
 modified: 2016-06-01T14:17:25-04:00
