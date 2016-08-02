@@ -105,6 +105,7 @@ span + .entry-title {
 .entry-meta {
 	@include span-columns(12);
 	text-transform: uppercase;
+  text-align: right;
 	@include font-size(14);
 	a {
 		color: $text-color;
