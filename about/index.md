@@ -11,7 +11,7 @@ categories.
 
 Current schedule is slightly dependent on mood, but two episodes of the same
 show won't be published in the same week. The current possible shows are:
-***#Dykesplained***, ***Smokin' with Sev*** and ***Sev & Tux Play***.
+***#Dykesplained***, ***Smokin' with Sev*** and ***GNU: Games oN linUx***.
 
 * **Wednesday** @ *16h00 GMT*
 * **Friday** @ *22h00 GMT*
