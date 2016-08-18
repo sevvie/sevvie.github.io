@@ -1,6 +1,6 @@
 ---
 layout: post
-title: #Dykesplained: Intel
+title: "#Dykesplained: Intel"
 exerpt: "This week on #Dykesplained, we find a less childish word for something."
 categories: scripts
 tags: []

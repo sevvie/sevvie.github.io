@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Salt and Sanctuary - GNU: Games oN linUx
+title: "Salt and Sanctuary - GNU: Games oN linUx"
 exerpt: "A review of the Linux port of Salt and Sanctuary."
 categories: scripts
 tags: []
