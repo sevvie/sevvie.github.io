@@ -1,0 +1,18 @@
+title: "Practicum du Sevvie"
+email: sevvie.rose+github@gmail.com
+description: ""
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username: sevvierose
+github_username:  sevvie
+
+# Build settings
+babel_js_extensions: 'es6'
+markdown: redcarpet
+gems:
+  - jekyll-feed
+  - jekyll-paginate
+  - jekyll-babel
+exclude:
+  - Gemfile
+  - Gemfile.lock
